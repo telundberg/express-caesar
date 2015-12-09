@@ -1,7 +1,5 @@
 'use strict';
 
-var pry = require('pryjs');
-
 function wordToAlphabetIndex(word){
   var indexArray = [];
   var alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
