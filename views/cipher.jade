@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    title Caesar Cipher
+    link(rel='stylesheet', href='/static/css/style.css', type='text/css')
+  body
+    h1 Enter a string to encrypt:
+    section.list        
+        div
+          each val in cipher
+            ul= val
+      section.post
+        form(method="POST", action="/")
+          label(for="string")
+          input(id="string", placeholder="New String", type="text", name="string" required)
+          input(type="submit", value="Encrypt this String")
