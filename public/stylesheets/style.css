@@ -1,5 +1,6 @@
 html,
 body {
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   border-style: solid;
   border-width: 5px;
@@ -15,10 +16,29 @@ a {
   color: #00B7FF;
 }
 
+ul {
+  font-size: 30px;
+}
+
+#string {
+  font-size: 20px;
+}
+
+.button {
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 1.7em;
+  width: 10em;
+}
+
+.button:hover {
+  background-color: #eeeeee;
+}
+
 .list {
   text-align: center;
 }
 
 .post {
-
 }

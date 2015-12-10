@@ -1,13 +1,10 @@
-var express = require('express');
-var path = require('path');
-var hike = require('./routes/hike');
-var cipher = require('./routes/cipher');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-// var routes = require('./routes/index');
-// var users = require('./routes/users');
+var express = require('express'),
+    path = require('path'),
+    cipher = require('./routes/cipher'),
+    favicon = require('serve-favicon'),
+    logger = require('morgan'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser');
 
 var app = express();
 
@@ -23,12 +20,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', routes);
-// app.use('/users', users);
-
 app.get('/', cipher.index);
 app.post('/', cipher.add_string);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

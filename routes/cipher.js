@@ -3,7 +3,6 @@ var posts = require('../posts.json');
 
 
 exports.index = function(req, res) {
- // res.render('cipher', {title: 'My Hiking Log'});
   var cipher = posts;
   res.render('cipher', {cipher: cipher})
 };
